@@ -1,0 +1,5 @@
+package topic.Java8Features.MethodReferences;
+
+public interface Sayable3 {
+
+}

@@ -1,0 +1,23 @@
+package topic.pattern.program;
+
+public class Test {
+
+	public static void main(String[] args) {
+		try {
+			Person person1 = new Person("John", 30);
+			Person person2 = (Person) person1.clone();
+
+			System.out.println("Original: " + person1);
+			System.out.println("Clone: " + person2);
+
+			// Changing the clone's data to show that the original and clone are separate
+			// objects. This is how person2 is a shallow copy
+			person2.name = "Jane";
+			System.out.println("After modifying clone:");
+			System.out.println("Original: " + person1);
+			System.out.println("Clone: " + person2);
+		} catch (CloneNotSupportedException e) {
+			e.printStackTrace();
+		}
+	}
+}

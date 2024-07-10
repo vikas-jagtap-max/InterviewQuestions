@@ -1,0 +1,34 @@
+package topic.ObjectCloning.ShallowCopy;
+
+public class Main {
+
+	public static void main(String[] args) throws CloneNotSupportedException {
+		Address address = new Address("Pune", "Maharashtra", "India");
+		Person person1 = new Person("Vikas", address);
+
+		// Shallow Copy
+		Person person2 = (Person) person1.clone();
+		// OR
+		// Person person2 = person1;
+		
+		System.out.println("Original Object: " + person1);
+		System.out.println("Cloned Object: " + person2);
+
+		// Change the main field of cloned object
+		person2.name = "Neha";
+		person2.address.city = "Mumbai";
+
+		//
+		System.out.println(person1.name);
+		System.out.println(person2.name);
+
+		// Change the field which contains reference of another object
+		person2.address.city = "Mumbai";
+
+		// It changes the field of base object also
+		// This is the problem with Shallow Copy which is overcome by Deep Copy
+		System.out.println(person1.address);
+		System.out.println(person2.address);
+	}
+
+}

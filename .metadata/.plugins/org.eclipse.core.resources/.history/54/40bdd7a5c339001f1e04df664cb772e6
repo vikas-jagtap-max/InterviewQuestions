@@ -1,0 +1,18 @@
+package StreamAPI;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.List;
+
+public class AvgSalaryOfEmp {
+
+	public static void main(String[] args) {
+
+		List<Employee> employees = Arrays.asList(
+				new Employee(1, "John", 50500.0, "Developer", 26, LocalDate.of(2018, 10, 15), "Male"),
+				new Employee(2, "Jane", 65000.500, "Manager", 35, LocalDate.of(2015, 05, 10), "Male"),
+				new Employee(3, "Riya", 70000.300, "Senior Developer", 36, LocalDate.of(2012, 12, 01), "Female"),
+				new Employee(4, "Priya", 82000.300, "Technology Lead", 37, LocalDate.of(2012, 11, 03), "Female"));
+	}
+
+}

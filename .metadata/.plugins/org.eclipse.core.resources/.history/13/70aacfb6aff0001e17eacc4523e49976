@@ -1,0 +1,15 @@
+package summing;
+
+public class TwoSum {
+
+	// Time Complexity of HashMap is O(1)
+
+	public static void main(String[] args) {
+		int[] twoSum = { 2, 7, 11, 13 };
+		int target = 9;
+
+		for (int i = 0; i < twoSum.length; i++) {
+			int diffValue = target - twoSum[i];
+		}
+	}
+}

@@ -1,0 +1,12 @@
+package topic.Java8Features.MethodReferences;
+
+public class Implementation {
+
+	public static void say() {
+		System.out.println("Hello, this is static method.");
+	}
+
+	public void saySomething() {
+		System.out.println("Hello, this is static method.");
+	}
+}

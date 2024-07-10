@@ -1,0 +1,5 @@
+package topic.MarkerInterface.Cloneable;
+
+public class Person {
+
+}

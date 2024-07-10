@@ -1,0 +1,12 @@
+package topic.pattern.program;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		// Implementation of Functional Interface ex. Summation
+		Summation sum = (a, b) -> System.out.println(a + b);
+		System.out.println(sum);
+	}
+
+}

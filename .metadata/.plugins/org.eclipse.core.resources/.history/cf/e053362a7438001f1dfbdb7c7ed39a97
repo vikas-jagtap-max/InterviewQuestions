@@ -1,0 +1,16 @@
+package topic.Java8Features.MethodReferences;
+
+import topic.pattern.program.Implementation;
+import topic.pattern.program.Sayable;
+
+public class Test {
+
+	public static void main(String[] args) {
+
+		// 1)Referring static method
+				Sayable sayable = Implementation::say;
+				// Calling interface method
+				sayable.say();
+	}
+
+}

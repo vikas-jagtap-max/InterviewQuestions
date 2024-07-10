@@ -1,0 +1,14 @@
+package com.entrypoint;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+
+public class UnitTestingUsingJUnitMockitoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(UnitTestingUsingJUnitMockitoApplication.class, args);
+	}
+
+}

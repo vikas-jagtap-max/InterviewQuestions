@@ -1,0 +1,28 @@
+package topic.MarkerInterface.Cloneable;
+
+//3) Implement the Cloneable interface.
+//The clone() method in the Object class is protected and throws CloneNotSupportedException when called as the Object class does not implement the Cloneable interface. By overriding clone() and implementing Cloneable interface in custom class, this exception is avoided.
+//When a class implements the Cloneable interface, it signals to the Object.clone() method that it is legal to make a field-for-field copy of instances of that class.
+
+public class Person implements Cloneable {
+
+	public String name;
+	public int age;
+
+	public Person(String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+
+	//
+	@Override
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
+
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", age=" + age + "]";
+	}
+
+}

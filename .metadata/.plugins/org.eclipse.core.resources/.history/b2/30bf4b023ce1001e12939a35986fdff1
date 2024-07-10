@@ -1,0 +1,15 @@
+package com.entrypoint;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+@SpringBootApplication
+@ComponentScan("com.*")
+public class UnitTestingUsingJUnitMockitoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(UnitTestingUsingJUnitMockitoApplication.class, args);
+	}
+
+}

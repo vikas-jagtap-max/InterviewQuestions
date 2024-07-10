@@ -1,0 +1,6 @@
+package topic.pattern.program;
+
+public interface Summation {
+	void sum(int a, int b);
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;topic.basic.EvenAndOddNumber&apos; to &apos;topic.basic.program&apos;&#x0D;&#x0A;- Original project: &apos;HandsOn_Java_InterviewQ&apos;&#x0D;&#x0A;- Original element: &apos;HandsOn_Java_InterviewQ/src/topic.basic.EvenAndOddNumber&apos;&#x0D;&#x0A;- Renamed element: &apos;HandsOn_Java_InterviewQ/src/topic.basic.program&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;topic.basic.EvenAndOddNumber&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;topic.basic.EvenAndOddNumber" name="topic.basic.program" qualified="false" references="true" stamp="1711086331846" textual="false" version="1.0"/>
+</session>

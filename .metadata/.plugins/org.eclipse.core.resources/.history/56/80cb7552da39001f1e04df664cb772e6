@@ -1,0 +1,39 @@
+package StreamAPI;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+public class AvgSalaryOfEmp {
+
+	public static void main(String[] args) {
+
+		// List of employee with its respective details
+		List<Employee> employees = Arrays.asList(
+				new Employee(1, "John", 50500.0, "Developer", 26, LocalDate.of(2018, 10, 15), "Male"),
+				new Employee(2, "Jane", 65000.500, "Manager", 35, LocalDate.of(2015, 05, 10), "Male"),
+				new Employee(3, "Riya", 70000.300, "Senior Developer", 36, LocalDate.of(2012, 12, 01), "Female"),
+				new Employee(4, "Priya", 82000.300, "Technology Lead", 37, LocalDate.of(2012, 11, 03), "Female"));
+
+		//Average Salary of employee
+		Double avgSalary = employees.stream().collect(Collectors.averagingDouble(Employee::getSalary));
+		//
+		System.out.println("The average salary is: " + avgSalary);
+		
+		//
+		Integer largestSalary = employees.stream().max((e1,e2)->Double.compare(e1.getSalary(),e2.getSalary()));
+		System.out.println("Largest/Maximum Salary is: " + largestSalary);
+
+		//
+		Integer secondLargestSalary = employees.stream()
+		//System.out.println("Second Largest Salary is: " + secondLargestSalary);
+
+		
+		//
+		Integer minimumSalary = employees.stream().sorted()
+		//System.out.println("Minimum Salary is: " + minimumSalary);
+
+	}
+
+}

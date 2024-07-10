@@ -1,0 +1,8 @@
+package topic.pattern.program;
+
+public class Implementation {
+
+	public static void say() {
+		System.out.println("Hello, this is static method.");
+	}
+}

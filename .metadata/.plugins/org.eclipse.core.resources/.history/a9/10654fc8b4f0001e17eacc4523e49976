@@ -1,0 +1,34 @@
+package summing;
+
+import java.util.HashMap;
+
+public class TwoSum {
+
+	// Time Complexity of HashMap is O(1)
+
+	public static int[] twoSum(int[] num, int expSumOfTwoNums) {
+		HashMap<Integer, Integer> map = new HashMap<>();
+
+		for (int i = 0; i < num.length; i++) {
+			map.put(i, num[i]);
+		}
+
+		for (int i = 0; i < num.length; i++) {
+			int diffValue = expSumOfTwoNums - num[i];
+
+			if (map.containsKey(diffValue)) {
+				return new int[] { map.get(diffValue), i };
+			}
+			map.put(i, num[i]);
+		}
+		return null;
+
+	}
+
+	public static void main(String[] args) {
+		int[] nums = { 2, 7, 11, 13 };
+		int target = 9;
+		twoSum(nums, target);
+
+	}
+}

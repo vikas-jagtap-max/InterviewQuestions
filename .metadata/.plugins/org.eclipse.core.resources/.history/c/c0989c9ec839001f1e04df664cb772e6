@@ -1,0 +1,19 @@
+package StreamAPI;
+
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class CountNoOfOccurrencesOfCharsOfString {
+
+	public static void main(String[] args) {
+
+		String str = new String("Hello");
+		Map<Character, Long> characterCount = str.chars().mapToObj(c -> (char) c)
+				.collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+		//
+		characterCount.forEach((character, count) -> System.out.println(character + " : " + count));
+	}
+
+}
